@@ -23,10 +23,12 @@ class Calculate_test {
 		result = testCalc.subtraction(5, 5);
 		assertEquals(0, result);	
 		
-		result = testCalc.subtraction(5, 0);
-		assertEquals(ArithmeticException, result);	
+		result = testCalc.div(5, 1);
+		assertEquals(5, result);	
 		
-		
+		result = 5;
+		double test = testCalc.getResult();
+		assertEquals(test, result);		
 	}
 
 }
